@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "base/extends";
+
+@import "components/form";
+@import "components/table";
+
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/functions";
+
+@layer base {
+  :root {
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-primary-color: #222736;
+      --bg-secondary-color: #1e222e;
+      --bg-tertiary-color: #1E2139;
+
+      --text-primary-color: #F6F6F6;
+      --text-secondary-color: #c3cbe4;
+
+      --border-primary-color: #32394e;
+
+      --input-primary-color: #262b3a;
+
+
+      --btn-primary-color: #556EE6;
+      --btn-primary-shadow: 0 2px 0 var(--btn-primary-active-color);
+      --btn-primary-hover-color: #495fcc;
+      --btn-primary-active-color: #3b4ea9;
+
+      --menu-primary-hover-color: #14161e;
+
+      --btn-secondary-color: #2b3042;
+
+      --primary-error-color: #F56565;
+      --primary-success-color: #68D391;
+
+      --primary-color: #222736;
+      //--primary-color: #1E2139;
+      //--secondary-color: #2A3042;
+      --secondary-color: #161A25;
+
+      --link-hover-color: #6077e5;
+
+      --primary-gradient: linear-gradient(90deg, #556EE6 0%, #60A5FA 100%);
+
+      --primary-shadow: 0 0 0 1px #32394e, 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+      --font-family: "Poppins", sans-serif;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+  }
+
+  html {
+    font-size: $base-font-size !important;
+  }
+
+  body,
+  #root {
+    min-height: 100vh;
+    background-color: var(--bg-secondary-color);
+  }
+}
+
+@layer utilities {
+  .text-xs {
+    font-size: pxToRem(13px);
+  }
+
+  .text-sm {
+    font-size: pxToRem(16px);
+  }
+
+  .text-base {
+    font-size: pxToRem(18px);
+  }
+
+  .text-md {
+    font-size: pxToRem(19.5px);
+  }
+
+  .text-lg {
+    font-size: pxToRem(22.75px);
+  }
+
+  .text-xl {
+    font-size: pxToRem(26px);
+  }
+
+  .text-2xl {
+    font-size: pxToRem(32.5px);
+  }
+}

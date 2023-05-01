@@ -1,0 +1,28 @@
+.content {
+  @apply py-6 px-8 flex-1 overflow-y-auto;
+}
+
+.sidebar {
+  @apply h-screen left-0 bottom-0 overflow-auto bottom-0 p-6;
+}
+
+.sidebar__header {
+  @apply flex justify-center mb-6;
+}
+
+.header {
+  @apply flex flex-row items-center justify-between pl-2;
+  border-bottom: 1px solid var(--border-primary-color);
+}
+
+.header_avatar_wrapper {
+  @apply flex items-center gap-2;
+}
+
+.sidebar__menu {
+  @apply h-[calc(100%-80px)] flex flex-col;
+
+  > li {
+    @apply last:mt-auto last:bg-primary;
+  }
+}

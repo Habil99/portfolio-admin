@@ -1,0 +1,68 @@
+.ant-btn {
+  height: auto;
+}
+
+.ant-table {
+  $table: &;
+  border-radius: 0 !important;
+
+  &-layout,
+  &-content,
+  &-container,
+  &-cell {
+    border-radius: 0 !important;
+  }
+
+  &-thead {
+    #{$table}-cell {
+      background: var(--bg-tertiary-color-color) !important;
+    }
+  }
+
+  &-cell {
+    padding: 1rem !important;
+
+    &-row-hover {
+      background: transparent !important;
+    }
+  }
+}
+
+.ant-modal {
+  &-content,
+  &-header {
+    background-color: var(--bg-secondary-color) !important;
+  }
+}
+
+.ant-input {
+  &-focused,
+  &:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 2px var(--primary-color) !important;
+  }
+}
+
+.ant-notification {
+  &-notice {
+    &-success {
+      background: var(--bg-secondary-color) !important;
+    }
+  }
+}
+
+.ant-select {
+  &-selector {
+    padding: 8px !important;
+  }
+
+  &-dropdown {
+    background: var(--bg-secondary-color) !important;
+  }
+}
+
+.ant-empty {
+  &-description {
+    color: var(--text-primary-color) !important;
+  }
+}

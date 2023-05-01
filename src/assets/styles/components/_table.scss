@@ -1,0 +1,7 @@
+.g-table {
+  @apply overflow-auto;
+
+  table {
+    @apply min-w-[768px];
+  }
+}

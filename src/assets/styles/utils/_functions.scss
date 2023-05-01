@@ -1,0 +1,7 @@
+@function pxToRem($px) {
+  @if unit($px) == px {
+    @return $px / $base-font-size * 1 rem;
+  } @else {
+    @return $px;
+  }
+}
